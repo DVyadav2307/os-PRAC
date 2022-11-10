@@ -18,8 +18,6 @@ int main()
         scanf_s("%d",&BT[i]);
     }
     FCFS(process,AT,BT);
-   
-
 }
 int FCFS(int process,int AT[],int BT[])
 {   //cal of CT
