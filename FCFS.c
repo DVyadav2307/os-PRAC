@@ -38,4 +38,11 @@ int FCFS(int process,int AT[],int BT[])
     printf("\nProcess \t Arrival time \t Bust Time \t Completion time \t Turn Around Time\t Waiting Time");
     for(int i=0;i<process;i++)
     printf("\nProcess #%-12d%-15d%-18d%-21d%-25d%-27d",i+1,AT[i],BT[i],CT[i],TAT[i],WT[i]);
+    int avg_TAT=0,avg_WT=0;
+    for(int i=0;i<=process;i++)
+    {
+        avg_TAT=avg_TAT+TAT[i];
+        avg_WT=avg_WT+WT[i];
+    }
+    printf("\n Average TAT= %d\n Average WT= %d",avg_TAT/process,avg_WT/process);
 }
