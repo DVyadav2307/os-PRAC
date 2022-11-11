@@ -9,13 +9,13 @@ int main()
     int process, AT[100], BT[100];
     int b;
     printf("Enter the number of processes:");
-    scanf_s("%d",&process);
+    scanf("%d",&process);
     for(int i=0;i<process;i++)
     {
         printf("process: P%d\n Enter the arrival time: ",i+1);
         scanf("%d",&AT[i]);
         printf(" Enter the Bust time: ");
-        scanf_s("%d",&BT[i]);
+        scanf("%d",&BT[i]);
     }
     FCFS(process,AT,BT);
 }
